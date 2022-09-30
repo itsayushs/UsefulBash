@@ -58,3 +58,15 @@ select opt in add subtract multiply divide quit; do
 done
 
 ```
+
+Stroing and printing output in array: 
+```
+arr=($(ls))
+my_array_length=${#arr[@]}
+echo $my_array_length
+
+select element in "${arr[@]}"
+do
+   echo "${element}"
+done
+```

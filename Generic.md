@@ -1,3 +1,8 @@
+replace space with newline:
+```
+echo "$string" | tr '\n' ' '
+```
+
 Wait for userinput: 
 ```
 read -p 'Enter 1 or 2' vara

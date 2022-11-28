@@ -34,6 +34,18 @@ do
 done
 ```
 
+Check if the output str contains substr
+```
+#!/bin/bash
+
+STR='GNU/Linux is an operating system'
+SUB='Linux'
+
+if grep -q "$SUB" <<< "$STR"; then
+  echo "It's there"
+fi
+```
+
 Select and pass value in function:
 ```
 calculate () {
